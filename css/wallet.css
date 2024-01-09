@@ -2,32 +2,51 @@
     background-color: #dae5f7;
     padding: 30px;
     margin-bottom: 5px;
-    border: 1px dotted grey;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 #pubKey {
-    background-color: #daf7ed;
-    padding: 30px;
-    border: 1px dotted grey;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#add {
-    background-color: #f7f6da;
-    padding: 30px;
-    border: 1px dotted grey;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#qrCode {
     background-color: #dae5f7;
     padding: 30px;
-    margin-bottom: 5px;
-    border: 1px dotted grey;
     font-family: Arial, Helvetica, sans-serif;
+    flex-basis: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
 }
-
+#pubText,#address{
+    border: 3px solid black;
+    margin-top: 10px;
+    height: 100px;
+    padding: 2px;
+    background-color: white;
+    
+}
+#add {
+    background-color: #dae5f7;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-basis: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+#qr{
+    display: flex;
+    justify-content: center;
+}
+#qrCode {
+    background-color: #dae5f7;
+    margin-bottom: 5px;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 350px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+.qrContainer{
+    display: flex;
+    justify-content: center;
+}
 #privKey {
     font-family: Arial, Helvetica, sans-serif;
     word-break: break-all;
@@ -49,12 +68,10 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-} */
+body{
+    background: rgb(6,248,180);
+    background: linear-gradient(90deg, rgba(6,248,180,1) 0%, rgba(0,212,255,1) 100%);
+}
 .container{
     display: flex;
     justify-content: center;
@@ -66,9 +83,10 @@
     justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 0 3px #ccc;
     margin: 7px;
+    background-color: whitesmoke;
 }
 
 .container .coin-price .logo{
@@ -83,4 +101,35 @@
 }
 .container .coin-price div h1{
     font-size: 20px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.wallet{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex: 1;
+    padding: 20px 40px;
+}
+.information{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.header{
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    font-size: 50px;
+}
+h1{
+    text-align: center;
+}
+.footer{
+    background-color: pink;
+    margin: 20px;
+    border-radius: 20px;
 }

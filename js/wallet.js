@@ -11,9 +11,15 @@ y.innerHTML = pubKey.toString();
 var z = document.querySelector("#address");
 z.innerHTML = address.toString();
 
+
 var addressCode = 'bitcoinsv:' + address;
 console.log(addressCode)
 new QRCode(document.getElementById("qr"), addressCode);
+// var canvas=document.getElementsByTagName("canvas")[0];
+// console.log(canvas);
+// canvas.width=100;
+// canvas.height=100;
+
 
 // var config = {
 //     method: 'get',
